@@ -1,0 +1,262 @@
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.location {
+  margin-bottom: 113px;
+
+  @include for-size(mobile-only) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @include for-size(tablet) {
+    margin-bottom: 165px;
+  }
+}
+
+.location__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: -84px;
+  margin-bottom: 54px;
+
+  @include for-size(tablet) {
+    flex-direction: row;
+    margin-top: -78px;
+    margin-bottom: 81px;
+  }
+
+  @include for-size(desktop) {
+    margin-top: -102px;
+    margin-bottom: 86px;
+  }
+}
+
+.location__card {
+  width: 220px;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  padding-left: 20px;
+  padding-right: 21px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  font-size: 12px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+  @include for-size(tablet) {
+    width: calc((100% - 2 * 20px) / 3);
+    margin-right: 20px;
+    margin-bottom: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 31px;
+    padding-right: 32px;
+
+    font-size: 14px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @include for-size(desktop) {
+    width: calc((100% - 2 * 29px) / 3);
+    margin-right: 29px;
+    padding-top: 52px;
+    padding-bottom: 61px;
+    padding-left: 43px;
+    padding-right: 44px;
+
+    font-size: 16px;
+  }
+}
+
+.location__subtitle {
+  display: inline-block;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 25px;
+
+  background-color: #f0d1a5;
+  border-radius: 4px;
+
+  @include font(12px, 1, 500);
+  color: $main-color;
+
+  @include for-size(tablet) {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+
+    font-size: 16px;
+    line-height: 1.86;
+
+    border-radius: 6px;
+  }
+}
+
+.location__subtitle--green {
+  background-color: #c2e297;
+}
+
+.location__city-box {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+
+  border-bottom: 1px solid #e1e1e1;
+
+  @include for-size(tablet) {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  @include for-size(desktop) {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+.location__city {
+  margin-bottom: 10px;
+
+  letter-spacing: 0.04em;
+
+  @include for-size(tablet) {
+    margin-bottom: 14px;
+  }
+
+  @include for-size(desktop) {
+    margin-bottom: 10px;
+  }
+}
+
+.location__description {
+  line-height: 1.5;
+  color: $description-light;
+
+  @include for-size(tablet) {
+    line-height: 1.64;
+  }
+
+  @include for-size(desktop) {
+    line-height: 1.83;
+  }
+}
+
+.location__schedule-box {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+
+  border-bottom: 1px solid #e1e1e1;
+
+  @include for-size(tablet) {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  @include for-size(desktop) {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+.location__schedule-item {
+  &:first-child {
+    margin-bottom: 10px;
+  }
+
+  @include for-size(tablet) {
+    &:first-child {
+      margin-bottom: 16px;
+    }
+  }
+
+  @include for-size(desktop) {
+    &:first-child {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.location__schedule-time {
+  color: $light-color;
+}
+
+.location__contact {
+  line-height: 1.5;
+
+  @include for-size(tablet) {
+    line-height: 1.83;
+  }
+}
+
+.location__link {
+  color: $description-light;
+  text-decoration: none;
+}
+
+.location__link-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include for-size(tablet) {
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.location__link-btn {
+  width: 161px;
+  height: 44px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0 auto;
+
+  @include font(16px, 1.31, 700);
+  text-decoration: none;
+
+  &:first-child {
+    margin-bottom: 10px;
+  }
+
+  @include for-size(tablet) {
+    margin: 0;
+
+    &:first-child {
+      width: 191px;
+      margin-bottom: 0px;
+      margin-left: auto;
+      margin-right: 15px;
+    }
+
+    &:last-child {
+      width: 174px;
+      margin-right: auto;
+    }
+  }
+
+  @include for-size(desktop) {
+    &:first-child {
+      width: 198px;
+    }
+
+    &:last-child {
+      width: 180px;
+    }
+  }
+}
